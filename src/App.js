@@ -40,7 +40,7 @@ export default function App() {
 
            
             <input type="text" placeholder="Enter Asteroid ID" value={inputvalue} onChange={(e)=>setInputvalue(e.target.value)}/>
-            <button  onClick={()=>random()}>Random Asteroid</button><br/>
+            <button  onClick={()=>random()}>Random Asteroid Button</button><br/>
             <button  disabled={!inputvalue}onClick={(e)=>submit(e)}>Submit</button>
 
             {loading && <Data data={data}/>}
